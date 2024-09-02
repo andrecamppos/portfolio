@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './About.css';
+import ContactModal from './ContactModal';
 
 const About = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
+
     return (
         <section id="about">
-            <h2>About Me</h2>
-            <p>Brief introduction about yourself.</p>
+            <div className="about-content">
+                <img src="/my-image.png" alt="Your Name" className="about-picture" />
+                <div className="about-text">
+                    <h2>Software Engineer</h2>
+                    <p>Brief introduction about yourself.</p>
+                    <button className="get-in-touch" onClick={handleOpenModal}>
+                        Get in Touch!
+                    </button>
+                    {isModalOpen && <ContactModal onClose={handleCloseModal} />}
+                </div>
+            </div>
         </section>
     );
 };
