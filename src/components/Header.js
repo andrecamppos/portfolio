@@ -4,7 +4,7 @@ import './Header.css';
 const Header = () => {
     return (
         <header> 
-            <h1>Andre Campos</h1>
+            <h1>Software Engineer</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>

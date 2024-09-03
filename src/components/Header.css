@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #282c34;
+    background-color: rgb(14, 22, 37);
     color: white;
 }
 
@@ -19,6 +19,8 @@ header nav ul {
 }
 
 header nav ul li a {
+    font-weight: bold;
+    font-size: x-large;
     color: white;
     text-decoration: none;
 }

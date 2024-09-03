@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Social from './components/Social';
 import Footer from './components/Footer';
+import Skills from './components/Skills';
 import './App.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
             <Header />
             <main>
                 <About />
+                <Skills />
                 <Projects />
                 <Experience />
                 <Social />

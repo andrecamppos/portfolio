@@ -22,12 +22,12 @@
 }
 
 #social ul li a {
-    color: #61dafb;
+    color: #21a1f1;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.2s ease-in-out;
 }
 
 #social ul li a:hover {
-    color: #21a1f1;
+    color: #61dafb;
 }

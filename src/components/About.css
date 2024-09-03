@@ -1,6 +1,10 @@
 #about {
-    padding: 2rem;
-    background-color: #f5f5f5;
+    background-image: url('../../public/background-image.png');
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image in the section */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Ensures text is readable, you can adjust color if needed */
+    text-align: center;
     display: flex;
     justify-content: center;
 }
@@ -9,8 +13,10 @@
     display: flex;
     align-items: center;
     gap: 2rem;
-    max-width: 800px;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: Adds a semi-transparent overlay to improve text readability */
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .about-picture {
@@ -18,6 +24,7 @@
     height: 300px;
     border-radius: 40%;
     object-fit: cover;
+    filter: grayscale(100%); /* Makes the image black and white */
 }
 
 .about-text {
