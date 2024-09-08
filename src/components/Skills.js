@@ -1,27 +1,26 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaJava } from 'react-icons/fa';
 import './Skills.css';
+
+const skills = [
+    { name: 'HTML5', icon: <FaHtml5 /> },
+    { name: 'CSS', icon: <FaCss3Alt /> },
+    { name: 'React', icon: <FaReact /> },
+    { name: 'Java', icon: <FaJava /> },
+    { name: 'Databases', icon: <FaDatabase /> },
+];
 
 const Skills = () => {
     return (
-        <section id="skills">
-            <h2>Skills</h2>
-            <div className="skills-container">
-                <div className="skill-item">
-                    <h3>Frontend Development</h3>
-                    <p>React, JavaScript, HTML, CSS</p>
-                </div>
-                <div className="skill-item">
-                    <h3>Backend Development</h3>
-                    <p>Node.js, Express, MongoDB, SQL</p>
-                </div>
-                <div className="skill-item">
-                    <h3>Tools & Technologies</h3>
-                    <p>Git, Docker, Webpack, Babel</p>
-                </div>
-                <div className="skill-item">
-                    <h3>Other Skills</h3>
-                    <p>Problem Solving, Teamwork, Agile Methodologies</p>
-                </div>
+        <section id="skills" className="skills-section">
+            <h2>My Skills</h2>
+            <div className="skills-grid">
+                {skills.map((skill, index) => (
+                    <div key={index} className="skill-card">
+                        <div className="icon-container">{skill.icon}</div>
+                        <h3>{skill.name}</h3>
+                    </div>
+                ))}
             </div>
         </section>
     );
